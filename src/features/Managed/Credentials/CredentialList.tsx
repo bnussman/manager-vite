@@ -231,7 +231,7 @@ export const CredentialList: React.FC<CombinedProps> = (props) => {
         <Grid
           className={classes.credentialListHeader}
           container
-          justify="space-between"
+          justifyContent="space-between"
           alignItems="flex-end"
           updateFor={[credentials, error, loading]}
         >

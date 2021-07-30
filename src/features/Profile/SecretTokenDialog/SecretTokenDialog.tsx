@@ -36,7 +36,7 @@ export const SecretTokenDialog: React.FC<CombinedProps> = (props) => {
       title={title}
       open={open}
       onClose={onClose}
-      disableBackdropClick
+      // disableBackdropClick
       disableEscapeKeyDown
       maxWidth="sm"
     >

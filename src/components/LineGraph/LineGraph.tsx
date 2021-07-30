@@ -279,7 +279,7 @@ const LineGraph: React.FC<CombinedProps> = (props: CombinedProps) => {
         <canvas height={chartHeight || 300} ref={inputEl} />
       </div>
       {legendRendered && legendRows && (
-        <div className={classes.container}>
+        <div className={classes.root}>
           <Table
             aria-label="Stats and metrics"
             className={classes.root}

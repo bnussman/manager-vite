@@ -373,7 +373,7 @@ export class OAuthClients extends React.Component<CombinedProps, State> {
           className={`${classes.root} m0`}
           container
           alignItems="center"
-          justify="space-between"
+          justifyContent="space-between"
         >
           <Grid className="p0" item>
             <Typography

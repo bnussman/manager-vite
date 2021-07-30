@@ -448,7 +448,7 @@ export class ListLinodes extends React.Component<CombinedProps, State> {
                             <Grid
                               container
                               className={classes.CSVwrapper}
-                              justify="flex-end"
+                              justifyContent="flex-end"
                             >
                               <Grid item className={classes.CSVlinkContainer}>
                                 <CSVLink

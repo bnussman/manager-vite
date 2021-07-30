@@ -237,7 +237,7 @@ const UsersLanding: React.FC<Props> = (props) => {
       <div className={classes.root}>
         <Grid
           container
-          justify="space-between"
+          justifyContent="space-between"
           alignItems="flex-end"
           className={classes.userLandingHeader}
         >

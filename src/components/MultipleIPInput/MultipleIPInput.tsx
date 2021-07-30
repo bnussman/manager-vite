@@ -147,7 +147,7 @@ export const MultipleIPInput: React.FC<Props> = (props) => {
           key={`domain-transfer-ip-${idx}`}
           direction="row"
           alignItems="center"
-          justify="center"
+          justifyContent="center"
           data-testid="domain-transfer-input"
         >
           <Grid item xs={11}>

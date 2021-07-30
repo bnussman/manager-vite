@@ -65,19 +65,21 @@ const AdaLink: React.FC<CombinedProps> = (props) => {
   /** ada chat bot */
   const { classes } = props;
 
-  return adaError === '' ? (
-    <IconButton
-      onClick={handleAdaInit}
-      className={classes.root}
-      aria-label="Get help with ADA bot"
-    >
-      <AdaIcon />
-    </IconButton>
-  ) : (
-    <Tooltip title={adaError} placement="top-end" aria-label={adaError}>
-      <AdaIcon className={classes.disabled} />
-    </Tooltip>
-  );
+  return null;
+
+  // return adaError === '' ? (
+  //   <IconButton
+  //     onClick={handleAdaInit}
+  //     className={classes.root}
+  //     aria-label="Get help with ADA bot"
+  //   >
+  //     <AdaIcon />
+  //   </IconButton>
+  // ) : (
+  //   <Tooltip title={adaError} placement="top-end" aria-label={adaError}>
+  //     <AdaIcon className={classes.disabled} />
+  //   </Tooltip>
+  // );
 };
 
 const styled = withStyles(styles);

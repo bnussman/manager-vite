@@ -124,7 +124,7 @@ export class SSHKeys extends React.Component<CombinedProps, State> {
           className={classes.sshKeysHeader}
           container
           alignItems="flex-end"
-          justify="space-between"
+          justifyContent="space-between"
         >
           <Grid className="p0" item>
             <Typography variant="h3" className={classes.headline}>

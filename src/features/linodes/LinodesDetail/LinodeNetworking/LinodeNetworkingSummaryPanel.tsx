@@ -88,7 +88,7 @@ const LinodeNetworkingSummaryPanel: React.FC<CombinedProps> = (props) => {
   );
 
   return (
-    <Grid container justify="space-between">
+    <Grid container justifyContent="space-between">
       <Grid item xs={12}>
         <Paper className={classes.root}>
           <Grid container>

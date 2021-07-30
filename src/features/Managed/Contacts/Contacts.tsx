@@ -140,7 +140,7 @@ const Contacts: React.FC<CombinedProps> = (props) => {
             className={classes.contactsListHeader}
             container
             alignItems="center"
-            justify="space-between"
+            justifyContent="space-between"
           >
             <Grid item className="p0">
               <Typography className={classes.headline} variant="h3">

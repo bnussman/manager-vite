@@ -127,7 +127,7 @@ export const TransferControls: React.FC<{}> = (_) => {
         container
         className={classes.root}
         alignItems="center"
-        justify="space-between"
+        justifyContent="space-between"
         wrap="nowrap"
       >
         <Grid

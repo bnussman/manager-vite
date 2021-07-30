@@ -682,7 +682,7 @@ class DomainRecords extends React.Component<CombinedProps, State> {
             <div key={eachTypeIdx}>
               <Grid
                 container
-                justify="space-between"
+                justifyContent="space-between"
                 alignItems="center"
                 className={classes.root}
               >

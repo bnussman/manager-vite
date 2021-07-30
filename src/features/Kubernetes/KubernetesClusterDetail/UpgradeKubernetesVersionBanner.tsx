@@ -50,7 +50,7 @@ export const UpgradeKubernetesVersionBanner: React.FC<Props> = (props) => {
             container
             direction="row"
             alignItems="center"
-            justify="space-between"
+            justifyContent="space-between"
           >
             <Grid item>
               <Typography className={classes.upgradeMessage}>

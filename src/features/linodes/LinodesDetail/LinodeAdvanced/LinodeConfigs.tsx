@@ -190,7 +190,7 @@ class LinodeConfigs extends React.Component<CombinedProps, State> {
       <React.Fragment>
         <Grid
           container
-          justify="space-between"
+          justifyContent="space-between"
           alignItems="flex-end"
           className={classes.root}
         >
