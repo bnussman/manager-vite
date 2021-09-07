@@ -17,7 +17,7 @@ import { LongviewPort } from 'src/features/Longview/request.types';
 import ConnectionRow from './ConnectionRow';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
+  root: {
     [theme.breakpoints.down('sm')]: {
       marginTop: theme.spacing(3),
     },
@@ -41,7 +41,7 @@ export const ActiveConnections: React.FC<TableProps> = (props) => {
   const classes = useStyles();
 
   return (
-    <Grid item xs={12} md={4} className={classes.container}>
+    <Grid item xs={12} md={4} className={classes.root}>
       <Typography className={classes.title} variant="h2">
         Active Connections
       </Typography>

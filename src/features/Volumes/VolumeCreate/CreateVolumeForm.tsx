@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
   },
-  container: {
+  root: {
     padding: theme.spacing(3),
     paddingBottom: theme.spacing(4),
     '& .MuiFormHelperText-root': {
@@ -226,7 +226,7 @@ const CreateVolumeForm: React.FC<CombinedProps> = (props) => {
             )}
             <Grid container>
               <Grid item className="mlMain">
-                <Paper className={classes.container}>
+                <Paper className={classes.root}>
                   <Typography variant="body1" data-qa-volume-size-help>
                     A single Volume can range from 10 to {MAX_VOLUME_SIZE}{' '}
                     gibibytes in size and costs $0.10/GiB per month. Up to eight

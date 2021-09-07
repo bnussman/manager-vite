@@ -2,7 +2,7 @@ import * as React from 'react';
 import { makeStyles, Theme } from 'src/components/core/styles';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
+  root: {
     maxWidth: '100%',
     overflow: 'auto',
     border: `1px solid ${theme.color.grey2}`,
@@ -50,7 +50,7 @@ export const ScriptCode: React.FC<PropsWithStyles> = (props) => {
   const { script } = props;
 
   return (
-    <div className={classes.container}>
+    <div className={classes.root}>
       <table className={classes.table}>
         <tbody data-qa-script-code>
           {script.split('\n').map((line, counter) => (

@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     marginBottom: theme.spacing(4),
   },
-  container: {
+  root2: {
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
@@ -214,7 +214,7 @@ export const TwoFactor: React.FC<CombinedProps> = (props) => {
                   />
                 )}
                 {twoFactorEnabled && (
-                  <div className={classes.container}>
+                  <div className={classes.root2}>
                     <button
                       className={classes.button}
                       onClick={toggleHidden}

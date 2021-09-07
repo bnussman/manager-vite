@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     display: 'flex',
     justifyContent: 'center',
   },
-  container: {
+  root2: {
     display: 'flex',
     justifyContent: 'space-between',
   },
@@ -130,7 +130,7 @@ const PaymentInformation: React.FC<Props> = (props) => {
         className={`${classes.summarySection} ${classes.summarySectionHeight}`}
         data-qa-billing-summary
       >
-        <div className={classes.container}>
+        <div className={classes.root2}>
           <Typography variant="h3" className={classes.title}>
             Payment Methods
           </Typography>

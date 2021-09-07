@@ -11,7 +11,7 @@ interface Props {
 }
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
+  root: {
     width: '100%',
     backgroundColor: theme.bg.main,
     margin: 0,
@@ -94,7 +94,7 @@ export const Footer: React.FC<Props> = (props) => {
         spacing={4}
         alignItems="center"
         className={classNames({
-          [classes.container]: true,
+          [classes.root]: true,
           [classes.desktopMenuIsOpen]: desktopMenuIsOpen,
         })}
       >

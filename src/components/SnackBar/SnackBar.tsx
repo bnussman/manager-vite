@@ -12,11 +12,10 @@ import {
 } from 'src/components/core/styles';
 import CloseSnackbar from './CloseSnackbar';
 
-type ClassNames = 'root' | 'info' | 'success' | 'error' | 'warning';
+type ClassNames = 'info' | 'success' | 'error' | 'warning';
 
 const styles = (theme: Theme) =>
   createStyles({
-    root: {},
     info: {
       backgroundColor: theme.bg.white,
       borderLeftColor: theme.palette.primary.main,
@@ -51,10 +50,9 @@ const SnackBar: React.FC<CombinedProps> = (props) => {
 
   return (
     <SnackbarProvider
-      ref={notistackRef}
+      // ref={notistackRef}
       {...rest}
       classes={{
-        root: classes.root,
         variantSuccess: classes.success,
         variantError: classes.error,
         variantWarning: classes.warning,

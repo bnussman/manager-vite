@@ -17,7 +17,7 @@ type ClassNames = 'container' | 'errorState' | 'message' | 'link';
 
 const styles = (theme: Theme) =>
   createStyles({
-    container: {
+    root: {
       '& canvas': {
         margin: 'auto',
         display: 'block',
@@ -330,7 +330,7 @@ class Glish extends React.Component<CombinedProps, State> {
 
         {powered && activeVnc && token && region && (
           <div
-            className={classes.container}
+            className={classes.root}
             style={!initialConnect ? { display: 'none' } : {}}
           >
             <VncDisplay

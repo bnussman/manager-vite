@@ -37,7 +37,7 @@ const styles = (theme: Theme) =>
     helperText: {
       paddingTop: theme.spacing(1) / 2,
     },
-    container: {
+    root2: {
       padding: theme.spacing(3),
       paddingTop: theme.spacing(2),
       paddingBottom: theme.spacing(),
@@ -249,7 +249,7 @@ class CreateImageTab extends React.Component<CombinedProps, State> {
     const diskError = hasErrorFor('disk_id');
 
     return (
-      <Paper className={classes.container}>
+      <Paper className={classes.root2}>
         {!canCreateImage ? (
           <Notice
             error

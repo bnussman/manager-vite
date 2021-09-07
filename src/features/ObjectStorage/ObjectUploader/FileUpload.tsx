@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   barColorPrimary: {
     backgroundColor: theme.cmrBorderColors.borderBillingSummary,
   },
-  container: {
+  root2: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -150,7 +150,7 @@ const FileUpload: React.FC<Props> = (props) => {
         }}
         className={classes.progressBar}
       />
-      <div className={classes.container}>
+      <div className={classes.root2}>
         <div className={classes.leftWrapper}>
           <Typography
             variant="body1"

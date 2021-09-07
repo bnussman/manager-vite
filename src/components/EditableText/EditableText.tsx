@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     transition: theme.transitions.create(['opacity']),
     wordBreak: 'break-all',
   },
-  container: {
+  root2: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
@@ -196,7 +196,7 @@ const EditableText: React.FC<FinalProps> = (props) => {
 
   return !isEditing && !errorText ? (
     <div
-      className={`${classes.container} ${classes.initial} ${className}`}
+      className={`${classes.root2} ${classes.initial} ${className}`}
       data-testid={'editable-text'}
     >
       {!!labelLink ? (
@@ -218,7 +218,7 @@ const EditableText: React.FC<FinalProps> = (props) => {
     </div>
   ) : (
     <ClickAwayListener onClickAway={cancelEditing} mouseEvent="onMouseDown">
-      <div className={`${classes.container} ${className}`} data-qa-edit-field>
+      <div className={`${classes.root2} ${className}`} data-qa-edit-field>
         <TextField
           {...rest}
           className={classes.textField}

@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     textDecoration: 'inherit',
     lineHeight: 1,
   },
-  container: {
+  root2: {
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
@@ -184,7 +184,7 @@ export const EditableInput: React.FC<FinalProps> = (props) => {
 
   return !isEditing && !errorText ? (
     <div
-      className={`${classes.initial} ${className} ${classes.container}`}
+      className={`${classes.initial} ${className} ${classes.root2}`}
       data-testid={'editable-text'}
     >
       <React.Fragment>

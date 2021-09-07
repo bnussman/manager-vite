@@ -16,7 +16,7 @@ type Props = TextFieldProps & {
 };
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
+  root: {
     position: 'relative',
     paddingBottom: theme.spacing(1) / 2,
   },
@@ -79,7 +79,7 @@ const PasswordInput: React.FC<CombinedProps> = (props) => {
   const strength = React.useMemo(() => maybeStrength(value), [value]);
 
   return (
-    <Grid container className={classes.container}>
+    <Grid container className={classes.root}>
       <Grid item xs={12}>
         <input
           type="text"

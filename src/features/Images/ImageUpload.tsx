@@ -26,7 +26,7 @@ import { wrapInQuotes } from 'src/utilities/stringUtils';
 import ImagesPricingCopy from './ImagesCreate/ImagesPricingCopy';
 
 const useStyles = makeStyles((theme: Theme) => ({
-  container: {
+  root: {
     minWidth: '100%',
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(),
@@ -152,7 +152,7 @@ export const ImageUpload: React.FC<Props> = (props) => {
         }}
       </Prompt>
 
-      <Paper className={classes.container}>
+      <Paper className={classes.root}>
         {errorMap.none ? <Notice error text={errorMap.none} /> : null}
 
         <ImagesPricingCopy type="uploadImage" />

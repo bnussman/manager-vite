@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   chip: {
     fontSize: '0.625rem',
   },
-  container: {
+  root2: {
     flexWrap: 'nowrap',
   },
 }));
@@ -87,7 +87,7 @@ const PaymentMethodRow: React.FC<Props> = (props) => {
 
   return (
     <Paper className={classes.root} variant="outlined">
-      <Grid container className={classes.container}>
+      <Grid container className={classes.root2}>
         <Grid item className={classes.item}>
           {paymentMethod.type === 'credit_card' ? (
             <CreditCard creditCard={creditCard} />

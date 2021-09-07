@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   root: {
     width: '100% !important',
   },
-  container: {
+  root2: {
     marginTop: theme.spacing(3),
   },
   header: {
@@ -51,7 +51,7 @@ const DashboardCard: React.FC<CombinedProps> = (props) => {
       container
       className={classNames(className, {
         [classes.root]: true,
-        [classes.container]: true,
+        [classes.root2]: true,
       })}
       data-qa-card={title}
     >
