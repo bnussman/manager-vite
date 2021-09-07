@@ -59,6 +59,7 @@ class ToastNotifications extends React.PureComponent<WithSnackbarProps, {}> {
     this.subscription = events$
       .filter((e) => !e._initial)
       .map((event) => {
+        if (event.seen) return;
         const { enqueueSnackbar } = this.props;
         const _toastWithPersist = toastSuccessAndFailure(
           enqueueSnackbar,

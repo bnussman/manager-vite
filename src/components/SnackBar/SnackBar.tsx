@@ -50,7 +50,7 @@ const SnackBar: React.FC<CombinedProps> = (props) => {
 
   return (
     <SnackbarProvider
-      // ref={notistackRef}
+      ref={notistackRef}
       {...rest}
       classes={{
         variantSuccess: classes.success,
